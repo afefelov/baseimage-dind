@@ -12,10 +12,13 @@ RUN set -eux; \
 		xz-utils \
 		wget \
 		apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg2 \
-    software-properties-common \
+    	ca-certificates \
+    	iputils-ping \
+    	curl \
+    	gnupg2 \
+    	software-properties-common \
+    	python \
+    	htop \
 		pigz;
 
 RUN set -x \
