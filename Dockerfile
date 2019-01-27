@@ -18,8 +18,12 @@ RUN set -eux; \
     	gnupg2 \
     	software-properties-common \
     	python \
+    	python-pip \
+    	dnsutils \
+    	net-tools \
     	htop \
-		pigz;
+		pigz; \
+	pip install docker;
 
 RUN set -x \
 	&& addgroup --system dockremap \
